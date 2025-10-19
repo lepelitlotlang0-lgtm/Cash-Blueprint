@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PocketArchitect — Budget Built For You</title>
+  <style>
+    *{box-sizing:border-box;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
+    body{margin:0;background:#fff;color:#111}
+    .wrap{max-width:940px;margin:40px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between}
+    .logo{font-weight:700;font-size:20px}
+    .hero{display:grid;grid-template-columns:1fr;gap:18px;margin-top:28px}
+    h1{font-size:32px;margin:0}
+    p.lead{margin:0;color:#333}
+    .cta{margin-top:12px}
+    .btn{display:inline-block;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn-primary{background:#111;color:white}
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:28px}
+    .card{border-radius:12px;padding:16px;border:1px solid #eee}
+    footer{margin-top:40px;color:#666;font-size:14px}
+    @media(min-width:720px){.hero{grid-template-columns:1fr 360px}
+      h1{font-size:40px}}
+    .input{padding:12px;border-radius:8px;border:1px solid #ddd;width:100%}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">PocketArchitect</div>
+      <nav><a href="#features">Features</a></nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Budget the way your life actually works.</h1>
+        <p class="lead">Create goal-based money blueprints, share pots with people you trust, and never miss an important payment — all without confusing charts.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#waitlist">Join the waitlist — Free</a>
+        </div>
+
+        <div class="features" id="features">
+          <div class="card"><strong>Blueprints</strong><p>Turn any goal into a dynamic plan that updates automatically.</p></div>
+          <div class="card"><strong>Shared Pots</strong><p>Save together and release funds when you need them.</p></div>
+          <div class="card"><strong>Event-aware</strong><p>Link budgets to dates and reminders so you never forget a payment.</p></div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3>Get early access</h3>
+          <p>Enter your email and we’ll send a VIP link when we launch.</p>
+
+          <!-- Netlify-friendly form. When hosted on Netlify, Netlify will capture submissions. -->
+          <form id="waitlist" name="waitlist" method="POST" data-netlify="true" netlify>
+            <!-- required for Netlify -->
+            <input type="hidden" name="form-name" value="waitlist" />
+            <input class="input" type="email" name="email" placeholder="you@email.com" required />
+            <div style="margin-top:8px">
+              <button class="btn btn-primary" type="submit">Join Waitlist</button>
+            </div>
+          </form>
+
+        </div>
+
+        <div style="margin-top:12px" class="card">
+          <strong>Early offer</strong>
+          <p>First 50 signups get lifetime discount.</p>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      <p>Built for teens, students and busy families. Privacy-first. No bank needed to start.</p>
+    </footer>
+  </div>
+
+  <!-- Optional: simple success message replacement after submit (works when using Netlify forms with a redirect) -->
+</body>
+</html>
