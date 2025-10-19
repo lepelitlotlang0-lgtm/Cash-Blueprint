@@ -49,12 +49,12 @@ Aspiring developer, designer, and entrepreneur
 ## 📬 Contact & Socials
 - 🌐 Website: [Coming soon](#)
 - 🧠 Instagram: [@cashblueprint](#)
-- 💌 Email: cashblueprint@gmail.com (or your real one)
+- 💌 Email: cashblueprint@gmail.com 
 
 ---
 
 ## 🪪 License
-This project is licensed under the **MIT License** — you’re free to use and share it, just credit the creator.
+This project is licensed under the **MIT License** 
 
 ---
 ⭐ **If you like this project, give it a star on GitHub!**  
